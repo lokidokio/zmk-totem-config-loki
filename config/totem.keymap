@@ -125,7 +125,7 @@ ZMK_BEHAVIOR(tapdance_BSPC, tap_dance,
 
 // hold: first argument | tap: second argument
 ZMK_BEHAVIOR(holdtap_tdBSPC, hold_tap,
-    flavor = "tap-preferred";
+    flavor = "hold-preferred";
     tapping-term-ms = <280>;
     quick-tap-ms = <QUICK_TAP_MS>;
     require-prior-idle-ms = <150>;
