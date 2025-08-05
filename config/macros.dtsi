@@ -13,5 +13,12 @@
             bindings = <&kp COMMA &kp SPACE>;
             #binding-cells = <0>;
         };
+        
+        macro_semicolon_noshift: macro_semicolon_noshift {
+            label = "Macro Semicolon Without Shift";
+            compatible = "zmk,behavior-macro";
+            bindings = <&kp SEMICOLON>;
+            #binding-cells = <0>;
+        };
     };
 };
