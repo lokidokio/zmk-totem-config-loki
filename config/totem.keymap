@@ -98,7 +98,7 @@ ZMK_BEHAVIOR(tapdance_qmark, tap_dance,
 
 // tap: comma | shift + tap: semicolon 
 ZMK_BEHAVIOR(comma_morph, mod_morph,
-    bindings = <&kp COMMA>, <&kp SEMICOLON>;
+    bindings = <&kp COMMA>, <&kp SEMI>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
