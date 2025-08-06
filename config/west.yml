@@ -7,8 +7,5 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-behavior-mods
-      url: https://github.com/urob/zmk-behavior-mods
-      revision: main
   self:
     path: config
