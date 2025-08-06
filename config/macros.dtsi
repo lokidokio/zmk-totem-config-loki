@@ -14,7 +14,7 @@
             #binding-cells = <0>;
         };
         
-        macro_semicolon_noshift: macro_semicolon_noshift {
+     /*   macro_semicolon_noshift: macro_semicolon_noshift {
             label = "Semicolon no shift";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -22,6 +22,7 @@
                 &none
                 &kp SEMICOLON
             >;
+    */
         };
     };
 };
