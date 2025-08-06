@@ -19,9 +19,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <
-                &set_mods 0
+                &none
                 &kp SEMICOLON
-                &reset_mods
             >;
         };
     };
