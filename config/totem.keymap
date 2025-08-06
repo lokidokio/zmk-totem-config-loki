@@ -98,7 +98,7 @@ ZMK_BEHAVIOR(tapdance_qmark, tap_dance,
 
 // tap: comma | shift + tap: semicolon 
 ZMK_BEHAVIOR(comma_morph, mod_morph,
-    bindings = <&kp COMMA>, <&macro_semicolon_noshift>;
+    bindings = <&kp COMMA>, <&kp SEMICOLON>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
@@ -159,7 +159,7 @@ ZMK_BEHAVIOR(holdtap_sk, hold_tap,
             bindings = <
                &kp Q         &kp W         &kp F              &kp P            &kp B                 &kp J         &kp L                           &kp U            &kp Y            &kp APOS 
                &hml LCTRL A  &hml LALT R   &hml LGUI S        &hml LSHFT T     &kp G                 &kp M         &hmr RSHFT N                    &hmr RGUI E      &hmr LALT I      &hmr RCTRL O
-    ZOOMOUT    &kp Z         &kp X         &hml MEH C         &hml HYP D       &kp V                 &kp K         &hmr HYP H                      &hmr_meh MEH 0   &tapdance_dot    &tapdance_qmark    &macro_semicolon_noshift
+    ZOOMOUT    &kp Z         &kp X         &hml MEH C         &hml HYP D       &kp V                 &kp K         &hmr HYP H                      &hmr_meh MEH 0   &tapdance_dot    &tapdance_qmark    ZOOMIN
                                            &lt UTIL ESC       &lt NAV SPACE    &kp TAB               &kp RET       &holdtap_tdBSPC NUM &none       &holdtap_sk FUNC RSHFT
             >;
         };
