@@ -19,8 +19,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <
-                &none            // break any active modifiers like Shift
-                &kp SEMICOLON    // send semicolon
+                &set_mods 0
+                &kp SEMICOLON
+                &reset_mods
             >;
         };
     };
