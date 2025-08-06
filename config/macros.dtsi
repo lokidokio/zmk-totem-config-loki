@@ -15,10 +15,14 @@
         };
         
         macro_semicolon_noshift: macro_semicolon_noshift {
-            label = "Macro Semicolon Without Shift";
+            label = "Semicolon no shift";
             compatible = "zmk,behavior-macro";
-            bindings = <&kp SEMICOLON>;
             #binding-cells = <0>;
+            bindings = <
+                &set_mods 0
+                &kp SEMICOLON
+                &reset_mods
+            >;
         };
     };
 };
