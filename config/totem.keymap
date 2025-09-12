@@ -176,7 +176,7 @@ ZMK_BEHAVIOR(holdtap_sk, hold_tap,
             ___         ___           ___            ___             ___                            &kp STAR       &kp N7           &kp N8         &kp N9        &kp FSLH 
             ___         &kp LALT      &kp LGUI       &kp LSHFT       ___                            &kp PLUS       &kp N4           &kp N5         &kp N6        &kp CARET
   &kp LPAR  ___         ___           &kp MEH        &kp HYP         ___                            &kp MINUS      &kp N1           &kp N2         &kp N3        &none            &kp RPAR
-                                      ___             ___            ___                            &kp EQUAL      &kp DOT          &kp N0
+                                      ___             ___            ___                            &kp EQUAL      &kp N0           &kp DOT
             >;
         };
         func_layer {
