@@ -118,10 +118,9 @@ ZMK_BEHAVIOR(tapdance_dot, tap_dance,
     bindings = <&dot_morph>, <&macro_nextsentence DOT>;
 )
 
-/*
-// tap: deletes the entire word | double tap deletes one character
+// tap: deletes the one character | double tap deletes entire word
 ZMK_BEHAVIOR(tapdance_BSPC, tap_dance,
-    bindings = <&kp LA(BSPC)>, <&kp BSPC>;
+    bindings = <&kp BSPC>, <&kp LA(BSPC)>;
 )
 
 // hold: first argument | tap: second argument
@@ -133,7 +132,6 @@ ZMK_BEHAVIOR(holdtap_tdBSPC, hold_tap,
     bindings = <&mo>, <&tapdance_BSPC>;
     hold-trigger-on-release;
 )
-/*
 
 /*
 // tap: calls single quote | double tap calls double quotes // not using it becuase I want to get used to home row mods
@@ -159,10 +157,10 @@ ZMK_BEHAVIOR(holdtap_sk, hold_tap,
         compatible = "zmk,keymap";
         default_layer { // ColemakDHm
             bindings = <
-               &kp Q         &kp W         &kp F              &kp P            &kp B                 &kp J         &kp L                   &kp U            &kp Y            &kp APOS 
-               &hml LCTRL A  &hml LALT R   &hml LGUI S        &hml LSHFT T     &kp G                 &kp M         &hmr RSHFT N            &hmr RGUI E      &hmr LALT I      &hmr RCTRL O
-    ZOOMOUT    &kp Z         &kp X         &hml MEH C         &hml HYP D       &kp V                 &kp K         &hmr HYP H              &hmr_meh MEH 0   &tapdance_dot    &tapdance_qmark    ZOOMIN
-                                           &lt UTIL ESC       &lt NAV SPACE    &kp TAB               &kp RET       &lt NUM BSPC            &holdtap_sk FUNC RSHFT
+               &kp Q         &kp W         &kp F              &kp P            &kp B                 &kp J         &kp L                          &kp U            &kp Y            &kp APOS 
+               &hml LCTRL A  &hml LALT R   &hml LGUI S        &hml LSHFT T     &kp G                 &kp M         &hmr RSHFT N                   &hmr RGUI E      &hmr LALT I      &hmr RCTRL O
+    ZOOMOUT    &kp Z         &kp X         &hml MEH C         &hml HYP D       &kp V                 &kp K         &hmr HYP H                     &hmr_meh MEH 0   &tapdance_dot    &tapdance_qmark    ZOOMIN
+                                           &lt UTIL ESC       &lt NAV SPACE    &kp TAB               &kp RET       &holdtap_tdBSPC NAV &none      &holdtap_sk FUNC RSHFT
             >;
         };
         nav_layer { 
