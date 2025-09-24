@@ -160,31 +160,31 @@ ZMK_BEHAVIOR(holdtap_sk, hold_tap,
                &kp Q         &kp W         &kp F              &kp P            &kp B                 &kp J         &kp L                           &kp U            &kp Y            &kp APOS 
                &hml LCTRL A  &hml LALT R   &hml LGUI S        &hml LSHFT T     &kp G                 &kp M         &hmr RSHFT N                    &hmr RGUI E      &hmr LALT I      &hmr RCTRL O
     ZOOMOUT    &kp Z         &kp X         &hml MEH C         &hml HYP D       &kp V                 &kp K         &hmr HYP H                      &hmr_meh MEH 0   &tapdance_dot    &tapdance_qmark    ZOOMIN
-                                           &lt UTIL ESC       &lt NUM SPACE    &kp TAB               &kp RET       &holdtap_tdBSPC NAV &none       &holdtap_sk FUNC RSHFT
+                                           &lt UTIL ESC       &lt NAV SPACE    &kp TAB               &kp RET       &holdtap_tdBSPC NUM &none       &holdtap_sk FUNC RSHFT
             >;
         };
         nav_layer { 
             bindings = <
-            ___          &kp HOME     &kp UP         &kp END         &kp PAGE_UP                     ___           ___               ___            ___           ___ 
-            ___          &kp LEFT     &kp DOWN       &kp RIGHT       &kp PAGE_DOWN                   ___           &kp LSHFT         &kp LGUI       &kp LALT      &kp LCTRL
-    BACK    ___          ___          ___            ___             ___                             ___           &kp HYP           &kp MEH        ___           ___             FWD
-                                      ___            ___             ___                             ___           ___               ___
+            ___          ___          ___            ___             ___                   ___           &kp HOME          &kp UP          &kp END       &kp PAGE_UP 
+            &kp LCTRL    &kp LALT     &kp LGUI       &kp LSHFT       ___                   ___           &kp LEFT          &kp DOWN        &kp RIGHT     &kp PAGE_DOWN
+    BACK    ___          ___          &kp MEH        &kp HYP         ___                   ___           ___               ___             ___           ___             FWD
+                                      ___            ___             ___                   &kp RET       &kp BSPC          &kp DEL
             >;
         }; 
         num_layer {
             bindings = <
-            ___         ___           ___            ___             ___                            &kp STAR       &kp N7           &kp N8         &kp N9        &kp FSLH 
-            ___         &kp LALT      &kp LGUI       &kp LSHFT       ___                            &kp PLUS       &kp N4           &kp N5         &kp N6        &kp CARET
-  &kp LPAR  ___         ___           &kp MEH        &kp HYP         ___                            &kp MINUS      &kp N1           &kp N2         &kp N3        &none            &kp RPAR
-                                      ___             ___            ___                            &kp EQUAL      &kp N0           &kp DOT
+            &kp FSLH     &kp N7       &kp N8          &kp N9         &kp STAR              ___           ___               ___             ___           ___ 
+            &kp CARET    &kp N4       &kp N5          &kp N6         &kp PLUS              ___           &kp LSHFT         &kp LGUI        &kp LALT      &kp LCTRL
+  &kp LPAR  &none        &kp N1       &kp N2          &kp N3         &kp MINUS             ___           &kp HYP           &kp MEH         ___           ___            &kp RPAR
+                                      &kp DOT         &kp N0         &kp EQUAL             ___           ___               ___
             >;
         };
         func_layer {
             bindings = <
-            &none        &kp F7       &kp F8          &kp F9          ___                           ___            ___               ___             ___           ___
-            &kp F12      &kp F4       &kp F5          &kp F6          ___                           ___            &kp LSHFT         &kp LGUI        &kp LALT      &kp LCTRL 
-    ___     &kp F11      &kp F1       &kp F2          &kp F3          ___                           ___            &kp HYP           &kp MEH         ___           ___             ___
-                                      ___             &kp F10         ___                           ___            ___               ___
+            &none        &kp F7       &kp F8          &kp F9          ___                   ___           ___               ___             ___           ___
+            &kp F12      &kp F4       &kp F5          &kp F6          ___                   ___           &kp LSHFT         &kp LGUI        &kp LALT      &kp LCTRL 
+    ___     &kp F11      &kp F1       &kp F2          &kp F3          ___                   ___           &kp HYP           &kp MEH         ___           ___             ___
+                                      ___             &kp F10         ___                   ___           ___               ___
             >;
         };
         util_layer {
