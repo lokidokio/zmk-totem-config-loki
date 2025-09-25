@@ -118,9 +118,9 @@ ZMK_BEHAVIOR(tapdance_dot, tap_dance,
     bindings = <&dot_morph>, <&macro_nextsentence DOT>;
 )
 
-// tap: deletes the one character | double tap deletes entire word
+// tap: deletes a word | double tap deletes a character
 ZMK_BEHAVIOR(tapdance_BSPC, tap_dance,
-    bindings = <&kp BSPC>, <&kp LA(BSPC)>;
+    bindings = <&kp LA(BSPC)>, <&kp BSPC>;
 )
 
 // hold: first argument | tap: second argument
