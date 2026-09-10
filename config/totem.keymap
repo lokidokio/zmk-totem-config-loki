@@ -33,6 +33,7 @@
 #define HYP LS(LC(LA(LGUI)))
 #define MEH LS(LC(LALT))
 
+/*
 / {
      /* 
      * Custom Home Row Mod (HRM) definitions utilizing a balanced flavor, 
@@ -60,7 +61,7 @@
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;
         };
     };
-
+*/
 /* ------------------------ general config ----------------------- */
 
 #define QUICK_TAP_MS 175
