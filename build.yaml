@@ -1,10 +1,10 @@
 include:
-  - board: xiao_ble
+  - board: xiao_ble_sense
     zmk_board_variant: zmk
     shield: totem_left
-  - board: xiao_ble
+  - board: xiao_ble_sense
     zmk_board_variant: zmk
     shield: totem_right
-  - board: xiao_ble
+  - board: xiao_ble_sense
     zmk_board_variant: zmk
     shield: settings_reset
