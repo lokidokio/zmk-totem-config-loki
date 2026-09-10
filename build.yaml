@@ -1,18 +1,5 @@
-name: "Build"
-
-on:
-  push:
-    paths:
-      - ".github/workflows/build.yml"
-      - "config/**"
-      - "build.yaml"
-  pull_request:
-    paths:
-      - ".github/workflows/build.yml"
-      - "config/**"
-      - "build.yaml"
-  workflow_dispatch:
-
-jobs:
-  build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+include:
+  - board: xiao_ble
+    shield: totem_left
+  - board: xiao_ble
+    shield: totem_right
