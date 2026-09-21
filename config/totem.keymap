@@ -120,15 +120,22 @@ ZMK_BEHAVIOR(tapdance_dot, tap_dance,
 
 // tap: deletes one character | double tap deletes entire word
 ZMK_BEHAVIOR(tapdance_BSPC, tap_dance,
+    tapping-term-ms = <180>; // The window allowed between your first and second tap
     bindings = <&kp BSPC>, <&kp LA(BSPC)>;
 )
 
-// hold: first argument | tap: second argument
+// 2. Adjust the wrapper Hold-Tap to be much more responsive
 ZMK_BEHAVIOR(holdtap_tdBSPC, hold_tap,
     flavor = "tap-preferred";
-    tapping-term-ms = <280>;
+    tapping-term-ms = <200>; // Lowered from 280ms so the tap registers faster
+    quick-tap-ms = <200>;    // Hardcode 200ms to bypass global macro overlap 
+ 
+    // FIX 1: If you release the key before the tapping term, always send a tap
+    retro-tap;                        
+    
+    // FIX 2: Prevents rapid rolling keys from getting trapped in the hold decision
+    require-prior-idle-ms = <125>;
     quick-tap-ms = <QUICK_TAP_MS>;
-//  require-prior-idle-ms = <150>;
     bindings = <&mo>, <&tapdance_BSPC>;
     hold-trigger-on-release;
 )
