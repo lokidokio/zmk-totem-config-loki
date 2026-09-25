@@ -118,6 +118,7 @@ ZMK_BEHAVIOR(tapdance_dot, tap_dance,
     bindings = <&dot_morph>, <&macro_nextsentence DOT>;
 )
 
+/*
 // tap: deletes one character | double tap deletes entire word
 ZMK_BEHAVIOR(tapdance_BSPC, tap_dance,
     tapping-term-ms = <180>; // The window allowed between your first and second tap
@@ -139,6 +140,7 @@ ZMK_BEHAVIOR(holdtap_tdBSPC, hold_tap,
     bindings = <&mo>, <&tapdance_BSPC>;
     hold-trigger-on-release;
 )
+*/
 
 /*
 // tap: calls single quote | double tap calls double quotes // not using it becuase I want to get used to home row mods
